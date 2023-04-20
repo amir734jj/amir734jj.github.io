@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Amir personal website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sage Math is all I needed in a programming language!" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../../profile.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../../" class="text-decoration-none">
+                    
+                        Amir Hesamian
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Ph.D. candidate, software engineer
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/amir734jj" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://linkedin.com/in/hesamian" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Sage Math is all I needed in a programming language!</h3>
+            
+            <small class="text-muted">Published October 3, 2016</small>
+        </div>
+
+        <article>
+            <p>Writing a blog which is something I have never done before and by reading my previous blog posts, it is clear that I struggled with a proper number theory library. <a href="http://www.shoup.net/ntl/">NTL</a> and <a href="https://github.com/wbhart/flint2">FLINT</a> are great number theory packages written in C for people who have studied and used number theory for a long time and speed is their primary concern. On the other hand, there are people like me who have just learned about number theory and want to implement something without spending so much time learning a different programming language and a library that has been around for 10+ years (constantly being improved and new functionalities being introduced to).</p>
+<p>I am not a expert in Python (i.e. specially with data structures and dictionaries) but I can implement something in Python although it would take more time in comparison to java. <a href="http://www.sagemath.org/">Sage</a> was a perfect combination for me because I am familiar with both Python and some NTL. I was able to quickly start coding with Sage and I never went back to use NTL or trying to re-implement the library in java and then write my code in java.</p>
+<p>I give Sage a lot of credit for it&rsquo;s powerful polynomial parser. After trying to implement Implement a Multivariable Polynomial ring using java and seeing how difficult it is to implement a proper polynomial parser to works with edge cases, although it was a rewarding experience, it was time consuming. It took my about a month to write a library by working day and night.</p>
+<p>I also give Sage credit for it&rsquo;s LLL implementation. I used NTL&rsquo;s LLL implementation. Getting it working with NTL&rsquo;s BigInteger implementation is not straightforward. However, using LLL in sage is just one line of code: <code>LLL(matrix)</code></p>
+<p>Sage uses many open source libraries and links them all together using Python. It is a simple idea but it required clever implementation which Sage truly delivers. It is fascinating to see a smart type system that handle the linkage between all those open source libraries.</p>
+<p>I highly recommend to watch the following presentation by <a href="https://en.wikipedia.org/wiki/William_A._Stein">William Stein</a> (creator of Sage) in which he discusses history behind Sage and why it is truly a programming language to rule them all!</p>
+<p><a href="https://www.youtube.com/watch?v=6eIoYMB_0Xc" title="Video"><img src="http://img.youtube.com/vi/6eIoYMB_0Xc/0.jpg" alt="YouTube video"></a></p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+  <small class="text-muted">
+      
+          &copy; Copyright 2023, Amir Hesamian
+      
+      <br>
+      Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+      and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+  </small>
+</footer>
+
+<script
+  type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+      displayMath: [
+        ["$$", "$$"],
+        ["\\[", "\\]"],
+      ],
+      processEscapes: true,
+      processEnvironments: true,
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+    },
+  };
+</script>
+
+<style>
+  code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+  }
+</style>
+
+</body>
+</html>

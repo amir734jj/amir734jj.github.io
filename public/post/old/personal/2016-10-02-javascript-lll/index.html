@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Amir personal website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Journey with JavaScript trying to implement LLL" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../../profile.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../../" class="text-decoration-none">
+                    
+                        Amir Hesamian
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Ph.D. candidate, software engineer
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/amir734jj" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://linkedin.com/in/hesamian" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Journey with JavaScript trying to implement LLL</h3>
+            
+            <small class="text-muted">Published October 2, 2016</small>
+        </div>
+
+        <article>
+            <p>Fresh out of my summer internship at <a href="https://www.northwesternmutual.com">Northwestern mutual</a> and working extensively with JavaScript and Node.js, I was reading about <a href="https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm">LLL</a> and basics of lattice and lattice cryptography. I tried installing NTL on my Windows machine. It was a nightmare. Lack of documentation for such an important library was just astonishing. I did not have any success with Windows. Thereafter, I installed Ubuntu (in fact, I never switched backed to Windows) and had some success with NTL on Ubuntu. But the complication of NTL&rsquo;s type system and again lack of documentation halted my efforts.</p>
+<p>I decided to implement LLL myself to see how complicated it would be. My language of choice was JavaScript. Bad idea. Lack of built-in BigInteger was a limitation. Not to mention, concept of Matrix does not exist in JavaScript, I simply used 2 dimensional array instead. Furthermore, I had to implement <a href="https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process">Gram-Schmidt process</a> and <a href="https://en.wikipedia.org/wiki/Determinant">Matrix determinant</a> for an arbitrarily sized matrix all from scratch. My code worked after all, but slow speed and lack of modular implementation turned this mini project to one of my least favorite and cumbersome projects. Most importantly, it was a rewarding effort. I was able to see the promise of polynomial running time of lattice reduction with respect to delta constant. Shortly after I finished implementing the code, I learned that Sage math has a built-in LLL implementation which I did not know about. After learning about it, I started reading more about Sage math.</p>
+<p><a href="https://github.com/amir734jj/JavaScript_EMC6_linear_algebra_tools">GitHub link</a></p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+  <small class="text-muted">
+      
+          &copy; Copyright 2023, Amir Hesamian
+      
+      <br>
+      Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+      and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+  </small>
+</footer>
+
+<script
+  type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+      displayMath: [
+        ["$$", "$$"],
+        ["\\[", "\\]"],
+      ],
+      processEscapes: true,
+      processEnvironments: true,
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+    },
+  };
+</script>
+
+<style>
+  code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+  }
+</style>
+
+</body>
+</html>
