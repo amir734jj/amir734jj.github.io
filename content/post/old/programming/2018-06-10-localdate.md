@@ -1,10 +1,10 @@
----
-layout: post
-title:  "Local-date C# library"
-description: "C# DateTime alternatives"
-date:   2018-06-09 23:16:11 -0600
-categories: programming-blog
----
++++
+title = "Local-date C# library"
+description = "C# DateTime alternatives"
+date = "2018-06-09"
+categories = [ "programming-blog" ]
++++
+
 After learning the hard truth that C# does not come with a date only type and `DateTime` contains both
 the date and time, I started the journey to find the best library that fills the gap. I experimented with
 NodaTime library's `LocalDate` class but I found it difficult to use for very basic stuff like `ToString`

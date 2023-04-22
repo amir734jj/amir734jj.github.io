@@ -1,10 +1,10 @@
----
-layout: post
-title: "Multivariable Polynomial ring using java's BigInteger library"
-description: "Implementing a Multivariable Polynomial ring using java's BigInteger library"
-date: 2016-07-27 23:16:11 -0600
-categories: personal
----
++++
+title = "Multivariable Polynomial ring using java's BigInteger library"
+description = "Implementing a Multivariable Polynomial ring using java's BigInteger library"
+date = "2016-07-27"
+categories = [ "personal" ]
++++
+
 After disappointing and certainty a long fail journey trying to learn [NTL](http://www.shoup.net/ntl/) (Number Theory package written in C++), I decided to write my own Ring implementation. In short, it was a difficult talk but I learned a lot.
 
 Let's discuss the details. I needed a two classes: Monomial and Ring plus enum class to handle operations. Now, the key design choice is how to store the relationships between Monomials and operations. For example, [this](http://ring.perisic.com/) library written in java as well, uses String to store the relationship. The last thing a programmer wants is being confused by String manipulations. Therefore, I used Array of Objects to store the relationships.

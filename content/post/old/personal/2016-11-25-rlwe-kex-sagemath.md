@@ -1,10 +1,10 @@
----
-layout: post
-title: "Implementing R-LWE-KEX protocols via SageMath"
-description: "Implementing (*All*) R-LWE-KEX protocols via SageMath"
-date: 2016-11-25 23:16:11 -0600
-categories: personal
----
++++
+title = "Implementing R-LWE-KEX protocols via SageMath"
+description = "Implementing (*All*) R-LWE-KEX protocols via SageMath"
+date = "2016-11-25"
+categories = [ "personal" ]
++++
+
 **Basics of R-LWE key exchange** ([more information here](https://en.wikipedia.org/wiki/Ring_learning_with_errors_key_exchange)):
 
 - Alice: $$e, s \leftarrow \chi \$$ $$b=as+e\$$

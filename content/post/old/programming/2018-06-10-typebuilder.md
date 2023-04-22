@@ -1,10 +1,10 @@
----
-layout: post
-title: "Dynamic-type-builder C# library"
-description: "Create types in run-time"
-date: 2018-06-09 23:16:11 -0600
-categories: programming-blog
----
++++
+title = "Dynamic-type-builder C# library"
+description = "Create types in run-time"
+date = "2018-06-09"
+categories = [ "programming-blog" ]
++++
+
 I really wanted to create a type on the fly by extending an existing type and then add some extra properties to
 it. Thanks to `System.Reflection.Emit` written by Mono team it is possible to achieve this in dotnet core. This
 package comes with a `TypeBuilder` class but using it is really not a straightforward thing to do. Hence I created

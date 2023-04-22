@@ -1,10 +1,10 @@
----
-layout: post
-title: "Dynamic-map C# library"
-description: "Dynamic type mapper (experiment)"
-date: 2018-06-05 23:16:11 -0600
-categories: programming-blog
----
++++
+title = "Dynamic-map C# library"
+description = "Dynamic type mapper (experiment)"
+date = "2018-06-05"
+categories = [ "programming-blog" ]
++++
+
 I searched for hours for a library similar to AutoMapper but to map an object to a Type. In other words,
 instead of `Map<TSource, TDestination>(obj)`, having something like this: `Map(typeof(TDestination), obj)`.
 I even had an idea to use `Activator.CreateInstance()` to dynamically run the generic method call of
